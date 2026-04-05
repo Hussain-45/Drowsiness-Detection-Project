@@ -1,0 +1,73 @@
+Thu Mar 19 05:29:29 2026 : Drowsiness detected
+Thu Mar 19 05:36:42 2026 : Drowsiness detected
+Thu Mar 19 05:40:51 2026 : Eyes closed detected
+Thu Mar 19 05:40:54 2026 : Eyes closed detected
+Thu Mar 19 05:40:59 2026 : Eyes closed detected
+Thu Mar 19 05:41:05 2026 : Yawning detected
+Thu Mar 19 05:41:11 2026 : Eyes closed detected
+Thu Mar 19 05:43:27 2026 : Looking away
+Thu Mar 19 05:43:37 2026 : Looking away
+Thu Mar 19 05:43:42 2026 : Looking away
+Thu Mar 19 05:43:47 2026 : Looking away
+Thu Mar 19 05:43:54 2026 : Looking away
+Thu Mar 19 05:43:59 2026 : Looking away
+Thu Mar 19 05:44:04 2026 : Looking away
+Thu Mar 19 05:44:09 2026 : Looking away
+Thu Mar 19 05:44:14 2026 : Looking away
+Thu Mar 19 05:44:20 2026 : Head tilt
+Thu Mar 19 05:44:25 2026 : Looking away
+Thu Mar 19 05:44:30 2026 : Head tilt
+Thu Mar 19 05:44:35 2026 : Looking away
+Thu Mar 19 05:44:40 2026 : Eyes closed
+Thu Mar 19 05:44:45 2026 : Looking away
+Thu Mar 19 05:44:50 2026 : Looking away
+Thu Mar 19 05:44:55 2026 : Looking away
+Thu Mar 19 05:45:00 2026 : Looking away
+Thu Mar 19 05:45:05 2026 : Yawning
+Thu Mar 19 05:45:10 2026 : Looking away
+Thu Mar 19 05:45:15 2026 : Looking away
+Thu Mar 19 05:45:20 2026 : Eyes closed
+Thu Mar 19 05:45:25 2026 : Looking away
+Thu Mar 19 05:47:56 2026 : Eyes closed detection
+Thu Mar 19 05:48:05 2026 : Yawning detection
+Thu Mar 19 05:48:13 2026 : Yawning detection
+Thu Mar 19 05:48:22 2026 : Head tilt detection
+Thu Mar 19 05:48:34 2026 : Eyes closed detection
+Thu Mar 19 05:51:33 2026 : Eyes closed detection
+Thu Mar 19 05:51:54 2026 : Eyes closed detection
+Thu Mar 19 05:56:24 2026 : Looking away
+Thu Mar 19 05:56:27 2026 : Looking away
+Thu Mar 19 05:56:32 2026 : Looking away
+Thu Mar 19 05:56:37 2026 : Looking away
+Thu Mar 19 05:56:42 2026 : Looking away
+Thu Mar 19 05:56:50 2026 : Looking away
+Thu Mar 19 05:56:55 2026 : Looking away
+Thu Mar 19 06:04:43 2026 : Eyes closed
+Thu Mar 19 06:04:53 2026 : Yawning
+Thu Mar 19 06:05:03 2026 : Head tilt
+Thu Mar 19 06:05:12 2026 : Head tilt
+Thu Mar 19 06:05:23 2026 : Eyes closed
+Thu Mar 19 06:10:44 2026 : Fatigue risk detected
+Thu Mar 19 06:10:48 2026 : Fatigue risk detected
+Thu Mar 19 06:10:53 2026 : Fatigue risk detected
+Thu Mar 19 06:10:58 2026 : Fatigue risk detected
+Thu Mar 19 06:11:48 2026 : Eyes closed
+Thu Mar 19 06:11:57 2026 : Yawning
+Thu Mar 19 06:12:07 2026 : Head tilt
+Thu Mar 19 06:12:14 2026 : Eyes closed
+Thu Mar 19 06:16:44 2026 : Eyes closed detected
+Thu Mar 19 06:16:58 2026 : Yawning detected
+Thu Mar 19 06:17:07 2026 : Head tilt detected
+Thu Mar 19 06:22:26 2026 : Eyes closed detected
+Thu Mar 19 06:22:36 2026 : Yawning detected
+Thu Mar 19 06:22:46 2026 : Head tilt detected
+Thu Mar 19 06:22:55 2026 : Mobile phone detected
+Thu Mar 19 06:27:52 2026 : Eyes closed detected
+Thu Mar 19 06:28:09 2026 : Yawning detected
+Thu Mar 19 06:28:18 2026 : Lane departure detected
+Thu Mar 19 06:28:24 2026 : Lane departure detected
+Thu Mar 19 06:28:36 2026 : Eyes closed detected
+Thu Mar 19 06:28:41 2026 : Eyes closed detected
+Thu Mar 19 06:50:54 2026 : Lane departure detected
+Thu Mar 19 06:51:06 2026 : Eyes closed detected
+Thu Mar 19 06:51:41 2026 : Lane departure detected
