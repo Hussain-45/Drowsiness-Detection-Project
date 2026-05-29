@@ -35,6 +35,7 @@ NOSE=1
 CHIN=152
 LEFT_EAR=234
 RIGHT_EAR=454
+FOREHEAD=10
 
 
 EYE_THRESHOLD=0.20
@@ -50,6 +51,7 @@ eyes_start=None
 yawn_start=None
 tilt_start=None
 down_start=None
+up_start=None
 
 
 fatigue_history=[]
@@ -103,6 +105,8 @@ with mp_face_mesh.FaceMesh(refine_landmarks=True) as face_mesh:
 
         status="No Face"
         score=0
+        head_down=False
+        head_up=False
 
         if results.multi_face_landmarks:
 
@@ -117,11 +121,18 @@ with mp_face_mesh.FaceMesh(refine_landmarks=True) as face_mesh:
             angle=head_tilt_angle(landmarks)
             head_tilt=abs(angle)>20
 
+            forehead=landmarks[FOREHEAD]
             nose=landmarks[NOSE]
             chin=landmarks[CHIN]
-            head_down=(chin.y-nose.y)<0.05
 
-            fatigue.update(eyes_closed,yawn,head_tilt,head_down)
+            # Scale-invariant head pitch (forward/backward tilt) calculation
+            total_face_h = chin.y - forehead.y
+            pitch_ratio = (chin.y - nose.y) / total_face_h if total_face_h > 0 else 0.5
+
+            head_down = pitch_ratio < 0.36
+            head_up = pitch_ratio > 0.62
+
+            fatigue.update(eyes_closed,yawn,head_tilt,head_down or head_up)
 
             score=fatigue.fatigue_score()
 
@@ -179,7 +190,20 @@ with mp_face_mesh.FaceMesh(refine_landmarks=True) as face_mesh:
 
 
             if head_down:
-                trigger_alert("Driver looking down")
+                if down_start is None:
+                    down_start = current
+                if current - down_start > CONFIRM_TIME:
+                    trigger_alert("Driver looking down")
+            else:
+                down_start = None
+
+            if head_up:
+                if up_start is None:
+                    up_start = current
+                if current - up_start > CONFIRM_TIME:
+                    trigger_alert("Driver looking up")
+            else:
+                up_start = None
 
             if phone_detected:
                 trigger_alert("Mobile phone detected")
@@ -400,7 +424,7 @@ with mp_face_mesh.FaceMesh(refine_landmarks=True) as face_mesh:
                 cv2.line(canvas, (x1, y1), (x2, y2), line_color, 2, cv2.LINE_AA)
 
         # 5. Pulsing Vignette alert glow
-        if status == "DROWSY" or phone_detected or lane_departure:
+        if status == "DROWSY" or phone_detected or lane_departure or head_down or head_up:
             pulse = int(6 + 4 * np.sin(time.time() * 8))
             cv2.rectangle(canvas, (0, 0), (win_w, win_h), COLOR_DANGER, pulse)
 

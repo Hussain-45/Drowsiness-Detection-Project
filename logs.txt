@@ -83,3 +83,13 @@ Fri May 29 16:47:43 2026 : Yawning detected
 Fri May 29 16:47:54 2026 : Eyes closed detected
 Fri May 29 16:48:03 2026 : Head tilt detected
 Fri May 29 16:48:12 2026 : Yawning detected
+Fri May 29 16:51:47 2026 : Eyes closed detected
+Fri May 29 16:52:07 2026 : Yawning detected
+Fri May 29 16:52:17 2026 : Yawning detected
+Fri May 29 16:52:24 2026 : Yawning detected
+Fri May 29 16:52:39 2026 : Eyes closed detected
+Fri May 29 16:52:50 2026 : Head tilt detected
+Fri May 29 16:52:57 2026 : Head tilt detected
+Fri May 29 16:53:03 2026 : Driver looking down
+Fri May 29 16:53:09 2026 : Driver looking down
+Fri May 29 16:53:15 2026 : Driver looking up
