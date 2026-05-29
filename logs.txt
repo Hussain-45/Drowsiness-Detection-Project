@@ -71,3 +71,7 @@ Thu Mar 19 06:28:41 2026 : Eyes closed detected
 Thu Mar 19 06:50:54 2026 : Lane departure detected
 Thu Mar 19 06:51:06 2026 : Eyes closed detected
 Thu Mar 19 06:51:41 2026 : Lane departure detected
+Fri May 29 16:39:32 2026 : Eyes closed detected
+Fri May 29 16:39:41 2026 : Mobile phone detected
+Fri May 29 16:39:51 2026 : Head tilt detected
+Fri May 29 16:39:58 2026 : Head tilt detected

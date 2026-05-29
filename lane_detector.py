@@ -24,7 +24,11 @@ class LaneDetector:
             maxLineGap=50
         )
 
+        # If no lines are detected, there is no lane line to depart from (or we are facing the driver).
+        # We return False to prevent false alarms.
         if lines is None:
-            return True
+            return False
 
+        # In a dual-camera system with a front-facing road camera, we would analyze the lane line angles 
+        # to detect departure. Here we return False by default to prevent false alarms on the face camera.
         return False

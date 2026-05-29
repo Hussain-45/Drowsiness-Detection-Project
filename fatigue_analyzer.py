@@ -13,6 +13,8 @@ class FatigueAnalyzer:
         self.head_tilt_count=0
 
         self.last_eye_state=False
+        self.last_yawn_state=False
+        self.last_head_tilt_state=False
 
     def update(self,eyes_closed,yawn,head_tilt,head_down):
 
@@ -33,13 +35,20 @@ class FatigueAnalyzer:
             self.eye_start=None
             self.eye_duration=0
 
+        # Edge-triggered yawn count (increment only on transition from False to True)
         if yawn:
-            self.yawn_count+=1
+            if not self.last_yawn_state:
+                self.yawn_count+=1
 
-        if head_tilt or head_down:
-            self.head_tilt_count+=1
+        # Edge-triggered head tilt/down count
+        tilt_or_down = head_tilt or head_down
+        if tilt_or_down:
+            if not self.last_head_tilt_state:
+                self.head_tilt_count+=1
 
         self.last_eye_state=eyes_closed
+        self.last_yawn_state=yawn
+        self.last_head_tilt_state=tilt_or_down
 
     def fatigue_score(self):
 
